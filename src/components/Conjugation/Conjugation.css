@@ -1,0 +1,131 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #222;
+  color: white;
+}
+.conjugation {
+  background: rgba(255, 255, 255, 0.01);
+  padding: 20px;
+  font-size: 13px;
+}
+.conjugation-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.conjugation-select {
+  text-align: left;
+  margin-right: 20px;
+  width: 150px;
+}
+.conjugation-tenses {
+  display: flex;
+  justify-content: center;
+}
+.conjugation-tenses + .conjugation-tenses {
+  margin-top: 10px;
+}
+.conjugation-tense {
+  width: 300px;
+
+  text-align: left;
+}
+.conjugation-tense h3 {
+  margin: 0 0 5px;
+  color: orange;
+}
+
+.conjugation-item + .conjugation-item {
+  margin-top: 4px;
+}
+.conjugation-item {
+  display: flex;
+  flex-basis: 33.3%;
+}
+
+.conjugation-item-person {
+  flex-shrink: 0;
+  width: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+  margin-right: 10px;
+}
+
+.conjugation-item-auxiliary {
+  flex-shrink: 0;
+  text-align: left;
+  color: rgba(0, 255, 255, 0.8);
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.conjugation-item-verb {
+  flex-shrink: 0;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  white-space: nowrap;
+}
+
+.Select-control {
+  background-color: rgba(255, 255, 255, 0.01);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+.Select.is-focused > .Select-control {
+  background-color: rgba(255, 255, 255, 0.01);
+}
+.Select.is-open > .Select-control {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  color: white;
+}
+.Select.is-focused:not(.is-open) > .Select-control {
+  border-color: rgba(255, 255, 0, 0.5);
+  box-shadow: none;
+  background: rgba(255, 255, 255, 0.01);
+}
+.Select input {
+  color: white;
+}
+.Select-menu-outer {
+  background-color: #222;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+
+.Select-option {
+  background-color: rgba(255, 255, 255, 0.01);
+  color: #fff;
+}
+
+.Select-option.is-selected {
+  background-color: orange;
+  color: white;
+}
+.Select-option.is-focused {
+  background-color: orange;
+  color: white;
+}
+.Select-option.is-disabled {
+  color: white;
+}
+.Select-noresults {
+  color: white;
+}
+
+.Select.has-value.Select--single
+  > .Select-control
+  .Select-value
+  .Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single
+  > .Select-control
+  .Select-value
+  .Select-value-label {
+  color: white;
+}
