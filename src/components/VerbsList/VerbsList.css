@@ -1,0 +1,13 @@
+table.verbs-list {
+  margin: 50px auto;
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+}
+
+table .verbs-list tr,
+td {
+  padding: 10px;
+  border: 1px solid #333;
+  font-size: 13px;
+}

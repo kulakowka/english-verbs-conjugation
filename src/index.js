@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Conjugation from "./components/Conjugation/Conjugation";
+import App from "./components/App/App";
 import registerServiceWorker from "./registerServiceWorker";
 import "./index.css";
 
-ReactDOM.render(<Conjugation />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
 registerServiceWorker();

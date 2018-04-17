@@ -37,7 +37,7 @@ const tableScheme = [
 ];
 
 const conjugationService = new ConjugationService();
-const listOptions = conjugationService.list().map(verb => ({
+const listOptions = conjugationService.list().map(([verb]) => ({
   value: verb,
   label: verb
 }));

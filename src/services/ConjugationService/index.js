@@ -210,7 +210,7 @@ export default class ConjugationService {
   }
 
   list() {
-    return verbs.map(data => data[0]);
+    return verbs;
   }
 
   find(verb) {
